@@ -11,11 +11,19 @@
     */
 
     //ENTRADA
-
+    const fruta1 = (prompt(`Informe uma fruta:`));
+    const fruta2 = (prompt(`Informe uma fruta:`));
+    const fruta3 = (prompt(`Informe uma fruta:`));
+    const bebida1 = (prompt(`Informe uma bebida:`));
+    const bebida2 = (prompt(`Informe uma bebida:`));
+    const bebida3 = (prompt(`Informe uma bebida:`));
 
     //PROCESSAMENTO
-
+    let arrayfrutas = [fruta1, fruta2, fruta3];
+    let arraybebidas = [bebida1, bebida2, bebida3];
 
     //SAÍDA
-
+    alert(`As frutas a serem compradas são: ${arrayfrutas.join(', ')}.`);
+    alert(`As bebidas a serem compradas são: ${arraybebidas.join(', ')}.`);
+    alert(`A lista completa de compras é: ${arrayfrutas.concat(arraybebidas).join(', ')}.`);
 </script>
