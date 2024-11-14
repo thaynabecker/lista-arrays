@@ -1,0 +1,22 @@
+<meta charset="UTF-8" />
+<script>
+    /*
+    PROBLEMA: REMOVER SUV
+    Crie o seguinte array:
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    Pergunte ao usuário qual carro deseja REMOVER da lista.
+    Apresente a lista antiga de SUVs e a nova lista, após a remoção do veículo solicitado.
+    */
+
+    //ENTRADA
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    alert("Lista de SUVs: " + carrosSUV.join(", "));
+    let carroParaRemover = prompt("Qual carro você deseja remover da lista?");
+
+    //PROCESSAMENTO
+    const posicaoTexto = carrosSUV.indexOf(carroParaRemover);
+    const lista = carrosSUV.splice(posicaoTexto, 1);
+
+    //SAÍDA
+    alert("Nova lista de SUVs: " + carrosSUV.join(", "));
+</script>
