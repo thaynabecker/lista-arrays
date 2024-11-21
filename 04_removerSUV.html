@@ -18,11 +18,11 @@
     const posicaoTexto = carrosSUV.indexOf(carroParaRemover);
     if (posicaoTexto != -1) {
         carrosSUV.splice(posicaoTexto, 1);
-        alert(`O carro ${carroParaRemover} foi removido da lista de SUVs: /nLista atualizada:/n ${carrosSUV.join("/n-")}/n
-        Lista original: /n-${carrosSUVoriginal.join("/n-")}`);
+        document.write(`O carro ${carroParaRemover} foi removido da lista de SUVs:<br>Lista atualizada:<br>-${carrosSUV.join("<br>-")}<br>
+        Lista original:<br>-${carrosSUVoriginal.join("<br>-")}`);
         
     } else {
-        alert(`O carro ${carroParaRemover} não foi encontrado na lista ${carrosSUVoriginal.join("/n-")}.`);
+        document.write(`O carro ${carroParaRemover} não foi encontrado na lista ${carrosSUVoriginal.join("<br>-")}.`);
     }
     //SAÍDA
 </script>
